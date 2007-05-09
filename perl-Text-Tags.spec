@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Tags
-Summary:	Text::Tags - parses "folksonomy" space-separated tags (stub module)
-#Summary(pl.UTF-8):	
+Summary:	Text::Tags - parses "folksonomy" space-separated tags
+Summary(pl.UTF-8):	Text::Tags - analiza "folksonomicznych" znaczników oddzielonych spacjami
 Name:		perl-Text-Tags
 Version:	0.04
 Release:	1
@@ -22,12 +22,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Parses "folksonomies", which are simple space-separated-but-optionally-quoted
-tag lists.  See Text::Tags::Parser for the actual module; Text::Tags may be
+Parses "folksonomies", which are simple
+space-separated-but-optionally-quoted tag lists. See
+Text::Tags::Parser for the actual module; Text::Tags may be
 used in a future version of the distribution.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Moduł ten analizuje "folksonomie", czyli proste listy znaczników
+oddzielonych spacjami i opcjonalnie ujętych w cudzysłowy. Właściwy
+moduł to Text::Tags::Parser. Text::Tags być może będzie użyty w
+kolejnych wersjach.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
