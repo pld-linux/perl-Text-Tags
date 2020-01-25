@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Tags
 Summary:	Text::Tags - parses "folksonomy" space-separated tags
